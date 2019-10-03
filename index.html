@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="dist/style.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__logo"></div>
+        <nav class="header__nav"></nav>
+      </header>
 
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__logo"></div>
-      <nav class="header__nav"></nav>
-    </header>
-
-    <main>
-      <section class="section-promo">
+      <main>
+        <section class="section-promo">
           <aside class="section-promo__instagram"></aside>
           <section class="section-promo__content"></section>
-      </section>
+        </section>
 
-      <section class="section-completed-projects">
-        <div class="content-wrapper">
-          <div class="container">
-            <div class="section-completed-projects__"></div>
+        <section class="section-completed-projects">
+          <div class="content-wrapper">
+            <div class="container">
+              <div class="section-completed-projects__"></div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section-video-control">
-        <h2 class="section-video-control__title"></h2>
-        <div class="section-video-control__video"></div>
-        <p class="section-video-control__describe"></p>
-        <div class="section-video-control__form"></div>
-      </section>
-      
-    </main>
-
-  </div>
-  <script type="text/javascript" src="dist/bundle.js"></script>
-</body>
-
+        <section class="section-video-control">
+          <h2 class="section-video-control__title">Hello My friends</h2>
+          <div class="section-video-control__video">
+            <iframe              
+              src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG"              
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="section-video-control__describe">
+            At each facility, a camera is installed that broadcasts the progress of work on the clock.<br>
+            At any time, you can go to our website and monitor the progress of work in your apartment.<br>
+            You can watch the live broadcast from one of our facilities!<br>
+            Leave a request below and you will receive a link to the broadcast.
+          </p>
+          <form class="section-video-control__form">
+            
+          </form>
+        </section>
+      </main>
+    </div>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+  </body>
 </html>
