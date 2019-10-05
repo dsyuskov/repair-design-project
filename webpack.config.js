@@ -10,6 +10,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader', 
+        options: {
+            name: 'images/[name].[ext]'                    
+        }               
+    }, 
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        loader: 'file-loader?name=./fonts/[name].[ext]'
+    },
+      {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',

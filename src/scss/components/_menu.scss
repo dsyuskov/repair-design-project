@@ -1,0 +1,27 @@
+.header-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+
+    &__link {
+        color: $font-color;
+        font-family: "FuturaBookC", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.94vw;
+
+        @media(max-width: $large) {
+            font-size: 1.3vw;
+        }
+
+        @media(max-width: $medium) {
+            font-size: 1.7vw;
+        }
+        @media(max-width: $small) {
+            display: none;
+        }
+    }
+
+}

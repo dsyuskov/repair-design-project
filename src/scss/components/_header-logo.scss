@@ -1,0 +1,18 @@
+.header-logo {
+    margin: 0;
+    padding: 0;
+    color: $font-color2;
+    font-family: "FuturaDemiC", sans-serif;
+    font-size: 0.94vw;
+    text-transform: uppercase;
+
+    @media(max-width: $large) {
+        font-size: 1.3vw;
+    }
+    @media(max-width: $medium) {
+        font-size: 1.7vw;
+    }
+    @media(max-width: $small) {
+        font-size: 3vw;        
+    }
+}
