@@ -1,0 +1,18 @@
+.slider-projects-menu {
+    display: flex;    
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    &__item {
+        color: white; // delete
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        font-family: 'Yeseva One', serif;
+        padding-right: 60.5px;
+        cursor: pointer;
+    }
+}
