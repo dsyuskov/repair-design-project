@@ -12,6 +12,7 @@
 .content-wrapper {
     margin: 0 7%;
     background: red; // delete
+
     @media(max-width: $small) {
         margin: 0 4.7%;
     }
@@ -24,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     height: 83px;
+
     @media(max-width: $medium) {
         height: 70px;
     }
@@ -35,9 +37,11 @@
         padding-left: 5%;
         padding-right: 5%;
     }
+
     &__nav {
         padding-left: 30px;
         width: 46%;
+
         @media(max-width: $large) {
             width: 53%;
         }
@@ -55,6 +59,7 @@
         font-family: "FuturaDemiC", sans-serif;
         font-size: 0.94vw;
         text-decoration: underline;
+
         @media(max-width: $large) {
             display: none;
         }
@@ -69,6 +74,7 @@
     &__button {
         width: 161px;
         height: 37px;
+
         @media(max-width: $large) {
             width: 140px;
             height: 30px;
@@ -98,18 +104,15 @@
         background-size: cover;      
 
         @media(max-width: $pre-medium) {
-            width: 100%;     
-            
+            width: 100%;                 
         }
-
         @media(max-width: $small) {
             padding-top: 22%;
             padding-bottom: 9%;
             padding-left: 5%;
             padding-right: 5%;
             width: 100%;            
-            background: url("/asset/images/mobile_bg_section_promo.png") no-repeat;
-            //background-position: center center;
+            background: url("/asset/images/mobile_bg_section_promo.png") no-repeat;            
         }
     }
 
@@ -119,15 +122,24 @@
         line-height: 3.56vw;
         color: $font-color;
         text-transform: uppercase;
+
+        @media(max-width: $medium) {
+            font-size: 3.6vw;
+            line-height: 4vw;
+        }            
+        @media(max-width: $pre-medium) {
+            font-size: 4.6vw;
+            line-height: 6vw;
+        }                
         @media(max-width: $small) {
             font-size: 5.8vw;
             line-height: 8.2vw;
         }        
-    }
 
-    &__selected {
-        color: $font-color2;
-    }
+        &--selected {
+            color: $font-color2;
+        }
+    }    
 
     &__describe {
         width: 32%;
@@ -136,6 +148,25 @@
         font-size: 1.47vw;
         line-height: 2.0vw;
         color: $font-color;
+
+        @media(max-width: $large) {
+            width: 55%;
+            padding-top: 2.3%;
+            font-size: 3vw;
+            line-height: 3.4vw;
+        }
+        @media(max-width: $medium) {
+            width: 70%;
+            padding-top: 3.3%;
+            font-size: 3vw;
+            line-height: 3.4vw;
+        }
+        @media(max-width: $pre-medium) {
+            width: 80%;
+            padding-top: 4.3%;
+            font-size: 3.6vw;
+            line-height: 4.4vw;
+        }
         @media(max-width: $small) {
             width: 90%;
             padding-top: 4.3%;
@@ -144,23 +175,33 @@
         }
 
     }
+
     &__button-container {
         display: flex;       
         margin-top: 3.3%;
-        @media(max-width: $small) {
+
+        @media(max-width: $pre-medium) {
             flex-direction: column;            
+            margin-top: 6.3%;
+        }
+        @media(max-width: $small) {                    
             margin-top: 9.3%;
         }        
     }
+    
     &__button {
         width: 207px;
         height: 51px;
-        margin-right: 22px;
+        margin-right: 22px;       
         
-        @media(max-width: $large) {
-            width: 190px;
-            height: 45px;
-        }        
+        @media(max-width: $medium) {
+            width: 200px;        
+            margin-right: 15px;        
+        }
+        @media(max-width: $pre-medium) {
+            width: 70%;
+            margin-bottom: 5%;
+        }
         @media(max-width: $small) {
             width: 100%;
             height: 51px;
