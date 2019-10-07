@@ -1,0 +1,40 @@
+.instagram {
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    cursor: pointer;
+
+    &__title {
+        font-size: 0.94vw;
+        text-transform: uppercase;
+        color: $font-color2;
+        transform: rotate(90deg);
+        margin-bottom: 45px;
+        @media(max-width: $large) {
+            font-size: 1.3vw;
+        }
+        @media(max-width: $medium) {
+            font-size: 1.7vw;
+        }
+    }
+
+    &__line {
+        width: 0;
+        height: 50px;
+        border: 1px solid $font-color2;
+        @media(max-width: $large) {
+         height: 30px;
+        }
+        @media(max-width: $medium) {
+            height: 20px;
+        }
+    }
+    @media(max-width: $pre-medium) {
+        display: none;
+    }
+    @media(max-width: $small) {
+        display: none;
+    }
+}

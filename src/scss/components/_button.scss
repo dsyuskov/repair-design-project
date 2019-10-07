@@ -6,4 +6,9 @@
     text-transform: uppercase;
     font-family: "FuturaDemiC", sans-serif;
     font-size: 13px;
+    cursor: pointer;
+    &--border {
+        background: none;
+        border: 1px solid $button-border;
+    }
 }
