@@ -1,13 +1,14 @@
-@import 'base/normalize';
-@import 'base/fonts';
+@import "base/normalize";
+@import "base/fonts";
 
-@import 'abstracts/variables';
+@import "abstracts/variables";
+@import "abstracts/function";
 
-@import 'layout/grid';
+@import "layout/grid";
 
-@import 'components/header-logo';
-@import 'components/menu';
-@import 'components/button';
-@import 'components/instagram';
-@import 'components/slider-projects';
-@import 'components/scroll-down';
+@import "components/header-logo";
+@import "components/button";
+@import "components/menu";
+@import "components/instagram";
+@import "components/slider-projects";
+@import "components/scroll-down";

@@ -1,0 +1,8 @@
+@function calcSize($f-min, $f-max, $v-min: 375, $v-max: 1440) {
+    $k: ($f-max - $f-min)/($v-max - $v-min);
+    $b: $f-min - $k * $v-min;
+  
+    $b: $b * 1px;
+  
+    @return calc( #{$k} * 100vw + #{$b} );
+  }
