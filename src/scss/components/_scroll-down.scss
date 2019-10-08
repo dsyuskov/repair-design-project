@@ -6,4 +6,8 @@
     height: 97px;
     width: 247px;
     background-color: $bg-color1;
+    
+    @media (max-width: $small) {
+        display: none;
+    }
 }

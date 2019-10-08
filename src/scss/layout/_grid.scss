@@ -9,15 +9,6 @@
     background: $bg-color1;
 }
 
-.content-wrapper {
-    margin: 0 7%;
-    background: red; // delete
-
-    @media(max-width: $small) {
-        margin: 0 4.7%;
-    }
-}
-
 .header {
     display: flex;
     padding-left: 5.7%;
@@ -150,7 +141,6 @@
             width: 90%;
             padding-top: 4.3%;            
         }
-
     }
 
     &__button-container {
@@ -192,58 +182,18 @@
     // width: 1335px; //delete
     background: red;
 }
+      
 
-.section-completed-projects-container {
-    display: grid;
-    grid-template-rows: 100px 225px 225px 35px;
-    grid-template-columns: 37% 1fr 1fr;
-}
 .section-completed-projects {
     position: relative;
-    padding-top: 50px;
-    padding-left: 101px;
-    height: 707px;
+    padding-top: 7.3%;
+    padding-left: 7%;        
+   
+    @media(max-width: $small) {      
+      padding: 4.7%;        
+      padding-top: 9%;
+  }
 
-    border: 1px solid green;
-    color: white; // delete
-
-    &__title {
-        font-family: "Yeseva One", serif;
-        letter-spacing: -0.07em;
-        text-transform: uppercase;
-        font-size: calc( (100vw - 375px)/(1440 - 375) * (27 - 22) + 22px);
-        //font-size: calcFontSize(22, 27);        
-        line-height: calcFontSize(32, 37);
-    }
-
-    &__describe {        
-        margin-top: 22px;
-        padding-right: 60px;
-        font-family: "FuturaBookC";
-        font-size: 18px;
-        line-height: 29px;
-    }
-
-    &-block1 {
-        border: 1px solid red;
-    }
-    &-apartment {
-
-        border: 1px solid red;
-    }
-    &__slider-projects-menu {
-        border: 1px solid red;
-        grid-column: 2 / 4;
-    }
-    &-slider {
-        border: 1px solid red;
-        grid-column: 2 / 4;
-        grid-row: 2 / 5;
-    }
-
-    &-pagination {
-        border: 1px solid red;
-    }
 }
 
 
