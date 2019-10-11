@@ -1,4 +1,4 @@
-.slider-projects {
+.slider-projects {    
     overflow: hidden;
     display: grid;
     grid-template-rows: 1.8fr 225px 225px 1fr;
@@ -102,30 +102,36 @@
     }
 
 
-    &__image {
+    &__images {
         grid-area: image;
 
         @media (max-width: $small) {
           margin-top: 10%;
-         }
-
-        img {
-            width: 100%;
-            height: auto;            
-        }
+         }        
     }
 
-    &__image-next {
+    &__image {
+      width: 100%;
+      height: auto;            
+    }
+
+    &__images-next {
+        position: relative;
         grid-area: image-next;  
 
         @media (max-width: $small) {
           display: none;
-        }
+        }        
+    }
 
-        img {
-            width: 100%;
-            height: auto;            
-        }      
+
+    &__button-next {
+      position: absolute;       
+      top: 0;
+      bottom: 0;
+      left: 30px;
+      margin: auto 0;      
+      cursor: pointer;
     }
 
     &-pagination {
