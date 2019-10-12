@@ -1,0 +1,14 @@
+.checkbox {    
+    text-align: left;
+    
+    label {
+        font-family: "FuturaBookC", serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: $font-color4;
+
+        @media (max-width: $small) {
+            color: $font-color;
+        }
+    }
+}

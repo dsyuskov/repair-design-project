@@ -31,9 +31,6 @@
             height: 20px;
         }
     }
-    @media(max-width: $pre-medium) {
-        display: none;
-    }
     @media(max-width: $small) {
         display: none;
     }

@@ -1,20 +1,20 @@
-.slider-projects {    
+.slider-projects {
     overflow: hidden;
     display: grid;
     grid-template-rows: 1.8fr 225px 225px 1fr;
     grid-template-columns: 35% 51% 51%;
-    grid-column-gap: 21px;    
-    grid-template-areas:
-        ". menu ." 
-        "caption image image-next" 
-        "details image image-next"
-        "pagination image image-next";
+    grid-column-gap: 21px;
+    grid-template-areas: 
+      ". menu ."
+      "caption image image-next"
+      "details image image-next"
+      "pagination image image-next";
     color: $font-color;
 
-    @media (max-width: $small) {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: 
+    @media(max-width: $small) {
+        grid-template-columns: 1 fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
         "caption"
         "image"
         "details";
@@ -29,26 +29,25 @@
         margin: 0;
         height: 100%;
 
-        @media (max-width: $small) {
-          display: none;
+        @media(max-width: $small) {
+            display: none;
         }
     }
 
     &__item {
         color: $font-color;
         font-size: calcSize(12, 14);
-        line-height: calcSize(17, 19);        
+        line-height: calcSize(17, 19);
         text-transform: uppercase;
-        font-family: 'Yeseva One', serif;        
+        font-family: 'Yeseva One', serif;
         cursor: pointer;
-      
     }
 
     &__caption {
         grid-area: caption;
 
-        @media (max-width: $small) {
-          text-align: center;
+        @media(max-width: $small) {
+            text-align: center;
         }
     }
 
@@ -58,46 +57,46 @@
         text-transform: uppercase;
         font-size: calcSize(22, 27);
         line-height: calcSize(32, 35);
-        color: $font-color2;                
+        color: $font-color2;
     }
 
     &__describe {
         margin-top: 25px;
         padding-right: 20px;
-        font-family: "FuturaBookC",sans-serif;
+        font-family: "FuturaBookC", sans-serif;
         font-size: calcSize(14, 18);
         line-height: calcSize(22, 29);
-        
-        @media (max-width: $small) {
-          padding: 0 13px;
-         }
+
+        @media(max-width: $small) {
+            padding: 0 13px;
+        }
     }
-    
+
     &__details {
         grid-area: details;
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr 1fr;
 
-        @media (max-width: $small) {
-          margin-top: 10%;
-         }
-        
-        &-item {
-          h3 {
-            font-family: "Yeseva One", serif;
-            font-size: calcSize(14, 18);
-            line-height: calcSize(19, 25);
-            text-transform: uppercase;
-            color: $font-color2;
-          }
+        @media(max-width: $small) {
+            margin-top: 10%;
+        }
 
-          p {
-            margin-top: 10px;
-            font-family: "FuturaBookC", sans-serif;
-            font-size: 15px;
-            line-height: 20px;
-          }
+        &-item {
+            h3 {
+                font-family: "Yeseva One", serif;
+                font-size: calcSize(14, 18);
+                line-height: calcSize(19, 25);
+                text-transform: uppercase;
+                color: $font-color2;
+            }
+
+            p {
+                margin-top: 10px;
+                font-family: "FuturaBookC", sans-serif;
+                font-size: 15px;
+                line-height: 20px;
+            }
         }
     }
 
@@ -105,48 +104,47 @@
     &__images {
         grid-area: image;
 
-        @media (max-width: $small) {
-          margin-top: 10%;
-         }        
+        @media(max-width: $small) {
+            margin-top: 10%;
+        }
     }
 
     &__image {
-      width: 100%;
-      height: auto;            
+        width: 100%;
+        height: auto;
     }
 
     &__images-next {
         position: relative;
-        grid-area: image-next;  
+        grid-area: image-next;
 
-        @media (max-width: $small) {
-          display: none;
-        }        
+        @media(max-width: $small) {
+            display: none;
+        }
     }
 
-
     &__button-next {
-      position: absolute;       
-      top: 0;
-      bottom: 0;
-      left: 30px;
-      margin: auto 0;      
-      cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        margin: auto 0;
+        cursor: pointer;
     }
 
     &-pagination {
-      padding: 0;
-        grid-area: pagination;                
+        padding: 0;
+        grid-area: pagination;
         align-items: flex-end;
         display: flex;
-        list-style: none;    
-        
-        @media (max-width: $small) {
-          display: none;
-        }    
+        list-style: none;
+
+        @media(max-width: $small) {
+            display: none;
+        }
 
         &__item {
-          margin-right: 22px;
+            margin-right: 22px;
         }
     }
 }

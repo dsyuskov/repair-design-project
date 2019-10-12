@@ -1,12 +1,11 @@
-$content-wrapper-width: 1236px;
+$maket-width: 1440;
 
-$huge: 1440px;
-$large: 1100px;
-$medium: 800px;
-//$pre-medium: 600px;
-$pre-medium: 500px;
-//$small: 375px;
-$small: 390px;
+$huge: 1200px;
+$large: 992px;
+$medium: 768px;
+$small: 480px;
+
+
 
 //colors
 $bg-color1: #131313;
@@ -14,7 +13,8 @@ $bg-color2: #ffffff;
 
 $font-color: #ffffff;    
 $font-color2: #E3B873;
-$font-color3: rgba(255, 255, 255, 0.3);
+$font-color3: #363636;
+$font-color4: #181818;
 
 $button-color: #E3B873;
 $button-border: #ffffff;

@@ -1,0 +1,50 @@
+.text-field {        
+    width: 231px;
+
+    label {
+        display: block;
+        font-family: "FuturaBookC", serif;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: left;
+        @media (max-width: $small){
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+    }
+    input {
+        width: 100%;
+        display: block;        
+        font-family: "FuturaBookC", serif;
+        font-size: 18px;
+        line-height: 24px;
+        outline: none;
+        border: 0;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+
+        @media (max-width: $small) {
+            background: $bg-color1;
+            color: $font-color;
+            border-bottom: 1px solid $bg-color2;
+        }
+    }
+}
+
+/*
+Q
+W
+R
+S
+V
+A
+I
+K
+L
+J
+D
+G
+X
+B
+N
+P
+*/
