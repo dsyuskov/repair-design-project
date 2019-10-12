@@ -166,6 +166,13 @@
     // width: 1335px; //delete
     background: red;
 }
+.content-wrapper {
+    margin: 0 7%; 
+
+    @media(max-width: $small) {
+        margin: 0 4.7%;
+    }
+}
 
 
 .section-completed-projects {
@@ -177,7 +184,7 @@
         padding: 9% 4.7% 4.7%;
     }
 }
-
+/*
 .section-types-repair {
     padding-top: 120px;
     text-align: center;
@@ -242,7 +249,7 @@
         }
     }
 }
-
+*/
 .section-design-project {
     padding-top: 110px; // delete
     text-align: center;

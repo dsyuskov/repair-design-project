@@ -12,7 +12,7 @@
     color: $font-color;
 
     @media(max-width: $small) {
-        grid-template-columns: 1 fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
         "caption"
