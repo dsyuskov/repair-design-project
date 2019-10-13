@@ -1,35 +1,32 @@
 .section-types-repair {
-    position: relative;    
-    background: $bg-color2;
-    text-align: center;
+    position: relative;
+    background: $bg-color2;    
 
-    &__title {        
+    &__title {
         padding-top: 11.8%;
-        text-align: center;                
+        text-align: center;
         font-family: "Yeseva One", sans-serif;
-        font-size: 20px;        
+        font-size: 20px;
         line-height: 28px;
-        text-transform: uppercase;       
+        text-transform: uppercase;
         color: $font-color4;
-        background-color: $bg-color2; 
-       
-        @media (max-width: $small) {
+        background-color: $bg-color2;
+
+        @media(max-width: $small) {
             padding-top: 24%;
-            font-size: 22px;        
+            font-size: 22px;
             line-height: 30px;
         }
     }
 
-    &__logo {    
+    &__logo {
         width: 114px;
         height: 30px;
-        margin: 0 auto;
-        background: url("/asset/images/repair.svg") no-repeat center center;  
-        background-color: $bg-color2;                  
-        margin-top: 1%;
-        margin-bottom: 2.5%;
+        margin: 1% auto 2.5%;
+        background: url("/asset/images/repair.svg") no-repeat center center;
+        background-color: $bg-color2;
 
-        @media (max-width: $small){
+        @media(max-width: $small) {
             margin-top: 4.6%;
             margin-bottom: 11%;
         }
@@ -46,21 +43,21 @@
 
     &__item {
         position: relative;
-        width: 31.7%;                
-        padding-top: 23.6%;        
+        width: 31.7%;
+        padding-top: 23.6%;
         text-align: left;
 
         @media(max-width: $large) {
-            width: 50%;       
-            padding-top: 37%;      
+            width: 50%;
+            padding-top: 37%;
             margin: 0 auto;
         }
-        @media (max-width: $medium) {
-            width: 70%;                   
-            padding-top: 53%;       
+        @media(max-width: $medium) {
+            width: 70%;
+            padding-top: 53%;
             margin-bottom: 37px;
         }
-        @media (max-width: $small) {
+        @media(max-width: $small) {
             padding-top: 66%;
             margin-bottom: 37px;
         }
@@ -73,9 +70,9 @@
             padding-left: 35px;
             padding-bottom: 55px;
             background: white;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);       
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 
-            @media (max-width: $small) {
+            @media(max-width: $small) {
                 width: 80%;
                 margin-left: 0;
                 padding-top: 18px;
@@ -84,18 +81,18 @@
             }
         }
 
-        h3{            
+        h3 {
             font-family: "Yeseva One", sans-serif;
             font-size: 18px;
             line-height: 25px;
 
-            @media (max-width: $small) {
+            @media(max-width: $small) {
                 font-size: 15px;
             }
-            
+
         }
 
-        ul {                       
+        ul {
             margin: 0 auto;
             padding-top: 6px;
             padding-left: 17px;
@@ -103,10 +100,10 @@
             font-family: "FuturaBookC", serif;
             font-size: 15px;
             line-height: 25px;
-            
+
             @media(max-width: $medium) {
                 font-size: 13px;
-                line-height: 22px;                
+                line-height: 22px;
             }
 
         }
@@ -115,26 +112,26 @@
             width: 100%;
         }
 
-        &--redecorating{
+        &--redecorating {
             background: url("/asset/images/bg_repair_redecoration.png") no-repeat;
             background-size: contain;
         }
 
-        &--overhaul{
+        &--overhaul {
             background: url("/asset/images/bg_repair_overhaul.png") no-repeat;
             background-size: contain;
         }
 
-        &--designer{
+        &--designer {
             background: url("/asset/images/bg_repair_designer.png") no-repeat;
             background-size: contain;
         }
     }
 
     &__price {
-        position: relative;     
-        box-sizing: border-box;   
-        top: -25px;        
+        position: relative;
+        box-sizing: border-box;
+        top: -25px;
         width: 58%;
         height: 54px;
         margin-left: 32px;
@@ -142,14 +139,14 @@
         font-family: "Yeseva One", sans-serif;
         font-size: 18px;
         line-height: 54px;
-        text-transform: uppercase;        
+        text-transform: uppercase;
         background: #E3B873;
         box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 
-        @media (max-width: $huge) {
+        @media(max-width: $huge) {
             width: 80%;
         }
-        @media (max-width: $small) {
+        @media(max-width: $small) {
             top: -23px;
             width: 190px;
             height: 40px;
@@ -158,4 +155,170 @@
             line-height: 40px;
         }
     }
+
+    &__request {
+        margin-top: 154px;        
+        display: flex;
+
+        @media (max-width: $huge) {
+            flex-direction: column;            
+        }
+        @media (max-width: $large) {
+            margin-top: 0;
+        }
+    }
+
+    &__advantages {
+        box-sizing: border-box;
+        width: 833px;
+        height: 636px;        
+        background: url("/asset/images/bg-section-types_repair_request.png") no-repeat 0 -55px, url("/asset/images/ellipse_part1.svg") no-repeat 0 0, url("/asset/images/ellipse_part2.svg") no-repeat 395px 106px, url("/asset/images/ellipse_part3.svg") no-repeat 459px 222px, url("/asset/images/ellipse_part4.svg") no-repeat 427px 388px, url("/asset/images/ellipse_part5.svg") no-repeat 0 542px;   
+        padding-left: 317px;
+
+        @media (max-width: $huge) {
+         margin: 0 auto;
+        }
+        @media (max-width: $large) {
+            display: none;
+        }        
+    }
+
+    &__block2 {
+        box-sizing: border-box;
+        max-width: 506px;
+        height: 509px;
+        margin-top: 52px;
+        padding-top: 27px;
+        background: #131313;
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: right;
+
+        @media (max-width: $huge) {
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        @media (max-width: $medium) {            
+            width: 80%;
+            height: auto;
+            padding-bottom: 27px;
+        }
+        @media (max-width: $small) {
+            display: none;
+        }
+
+        h3 {
+            width: 60%;
+            margin: 0 auto 38px;
+            font-family: "FuturaDemiC", serif;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    &__text-field {
+        background-color: $bg-color1;
+        width: 100%;
+        margin-bottom: 50px;
+        label {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        input {
+            background: $bg-color1;
+            color: $font-color;
+            border-bottom: 1px solid $bg-color2;
+        }
+    }
+
+    &__checkbox {
+        margin-top: -33px;
+        label {            
+            color: $font-color;
+        }
+        
+    }
+
+    &__button {
+        margin-top: 36px;
+        width: 213px;
+        height: 51px;
+    }
+
+    &__economy {
+        margin-left: -39px;
+        margin-top: 55px;
+        height: 100px;
+        width: 233px;        
+        background: url("/asset/images/pig.svg") no-repeat;
+        font-family: "FuturaDemiC", serif;
+        font-size: 20px;
+        line-height: 25px;
+        color: #E3B873;
+        padding-left: 117px;
+        padding-top: 22px;
+        text-align: left;
+
+        @media (max-width: $medium) {
+            display: none;
+        }
+    }
+
+    &__fantasies {
+        margin-top: 50px;
+        height: 1132px; // delete
+        width: 100%;        
+        background: url("/asset/images/bg_section_types_repair.png") no-repeat center 226px;
+        background-size: contain;
+        
+
+        @media(max-width: $small) {
+            display: none;
+        }
+    }
+}
+
+.adventages-list {
+    counter-reset: item;
+    list-style-type: none;
+    
+    &__item {    
+        display: flex;      
+        align-items: center;      
+        font-family: "FuturaMediumC", serif;
+        font-size: 18px;           
+        
+        &-round {            
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #E3B873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+            text-align: center;            
+            margin-right: 15px;
+            font-family: "Yeseva One", serif;
+            font-size: 18px;   
+            line-height: 42px;          
+            text-align: center;
+            color: $font-color;
+        }
+        
+        &--first {          
+          margin-top: 61px;          
+        }
+
+        &--second{
+            margin-top: 69px;
+            margin-left: 74px;
+        }
+        &--third{
+          margin-top: 120px;
+          margin-left: 98px;
+        }
+        &--fourth{          
+          margin-top: 118px;
+          margin-left: 32px;
+        }
+    } 
 }
