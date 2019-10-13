@@ -236,8 +236,7 @@
         margin-top: -33px;
         label {            
             color: $font-color;
-        }
-        
+        }        
     }
 
     &__button {
@@ -267,16 +266,7 @@
 
     &__fantasies {
         margin-top: 50px;
-        height: 1132px; // delete
-        width: 100%;        
-        background: url("/asset/images/bg_section_types_repair.png") no-repeat center 226px;
-        background-size: contain;
-        
-
-        @media(max-width: $small) {
-            display: none;
-        }
-    }
+    } 
 }
 
 .adventages-list {
@@ -320,5 +310,123 @@
           margin-top: 118px;
           margin-left: 32px;
         }
-    } 
+    }     
 }
+
+.fantasies {
+    box-sizing: border-box;
+    padding-left: 6.7%;
+    padding-top: 8%;
+    padding-right: 7%;    
+    background: url("/asset/images/bg_section_types_repair.png") no-repeat center 75%;        
+    background-size: contain;       
+    display: grid;        
+    grid-template-columns: 1fr 28.6% 28.6%;
+    grid-template-rows: 3.5% 19.5% 30.5% 23% 8%;
+    grid-gap: 3.3%;
+    grid-template-areas: 
+        ". . fantasies3"
+        "menu fantasies1 fantasies3"
+        "menu fantasies1 fantasies4"
+        "menu fantasies2 fantasies4";
+
+    @media(max-width: $medium) {
+        display: none;
+    }
+    
+    &__item {
+        width: 100%;
+        height: auto;;
+    }
+
+    &__item--fantasies1 {
+        grid-area: fantasies1
+    }
+
+    &__item--fantasies2 {
+        grid-area: fantasies2
+    }
+
+    &__item--fantasies3 {
+        grid-area: fantasies3
+    }
+
+    &__item--fantasies4 {
+        grid-area: fantasies4
+    }
+
+    &-menu {
+        grid-area: menu;
+        margin-top: 12vw;
+        
+        @media (max-width: $huge){
+            margin-top: 7vw;
+        }
+        
+        @media (max-width: $large){
+            margin-top: 5vw;
+        }
+
+        h2 {
+            width: 300px;
+            font-family: "Yeseva One", sans-serif;
+            font-size: 27px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: $font-color2;
+            
+            @media (max-width: $large){
+                width: 250px;
+                font-size: 24px;
+                line-height: 34px;                
+            }         
+        }
+
+        ul{
+            padding: 0;
+            padding-top: 2.5vw;
+            list-style: none;
+            
+            @media (max-width: $huge){
+                padding-top: 1.6vw;
+            }
+
+            @media (max-width: $large){                
+                padding-top: 1vw;
+            }   
+        }
+
+        &__item{
+            padding-bottom: 1.06vw;
+            @media (max-width: $huge){
+                padding-bottom: 0.6vw;
+            }
+
+            @media (max-width: $large){                
+                line-height: 30px;
+                padding-bottom: 0.4vw;
+            }     
+
+            a{
+                font-family: "Proxima Nova Cn Rg", sans-serif;
+                font-size: 20px;
+                line-height: 34px;
+                text-decoration: none;
+                letter-spacing: 1.6px;
+                color: $font-color;     
+
+                @media (max-width: $large){                
+                    line-height: 30px;                    
+                }     
+            }
+
+            &--active {
+                a{
+                    color: $font-color2;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid $font-color2;
+                }
+            }
+        }
+    }
+}    
