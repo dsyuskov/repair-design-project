@@ -1,7 +1,19 @@
 
 .section-design-project {        
-    background: linear-gradient(to bottom, $bg-color2 0%, $bg-color2 34%, $bg-color2 34%, $bg-color1 34%, $bg-color1 100%);
-    position: relative;      
+    background: linear-gradient(to bottom, $bg-color2 0%, $bg-color2 31.6%, $bg-color2 31.6%, $bg-color1 31.6%, $bg-color1 100%);                
+    position: relative;    
+
+    @media (max-width: $huge) {
+        background: linear-gradient(to bottom, $bg-color2 0%, $bg-color2 25%, $bg-color2 25%, $bg-color1 25%, $bg-color1 100%);                
+    }
+
+    @media (max-width: $huge) {
+        background: linear-gradient(to bottom, $bg-color2 0%, $bg-color2 15%, $bg-color2 15%, $bg-color1 15%, $bg-color1 100%);                
+    }
+
+    @media (max-width: $small) {
+        background: #252525;
+    }
 
     &__title {
         padding-top: 6.3%;
@@ -11,46 +23,172 @@
         line-height: 28px;
         text-transform: uppercase;
         color: $font-color4;
-        background-color: $bg-color2;
+        //background-color: $bg-color2;
 
         @media(max-width: $small) {
-            padding-top: 24%;
+            padding-top: 110%; //need to change
             font-size: 22px;
-            line-height: 30px;
-        }
+            line-height: 30px;            
+            color: $font-color;
+        }        
     }
 
     &__logo {
         width: 114px;
         height: 30px;
-        margin: 1% auto 2.5%;
-        background: url("/asset/images/design.svg") no-repeat center center;
-        background-color: $bg-color2;
+        margin: 1% auto 1.7%;
+        background: url("/asset/images/design.svg") no-repeat center center;        
 
         @media(max-width: $small) {
             margin-top: 4.6%;
-            margin-bottom: 11%;
+            margin-bottom: 5%;
         }
     }
 
+    &__describe {
+        font-family: "FuturaBookC",;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        margin: 0 auto;
 
+        @media(max-width: $medium) {
+            font-size: 15px;
+            line-height: 21px;
+            width: 70%;
+        }
+
+        @media(max-width: $small) {                        
+            width: 85%;
+            color: $font-color;    
+        }
+    }
 
     &__container {
         display: flex;
         justify-content: space-between;
+        margin-top: 3vw;
 
-        @media(max-width: $small) {
+        @media(max-width: $large) {
             flex-direction: column;
+        }
+
+        @media(max-width: $small) {            
+            margin-top: 9vw;
         }
     }
 
     &__item {
-        width: 31.5%;
-        height: 707px; // delete
-        // border: 1px solid green;
+        position: relative;
+        width: 31.7%;
+        padding-top: 23.7%;
+        text-align: left;
 
+        @media(max-width: $large) {
+            width: 50%;
+            padding-top: 37%;
+            margin: 0 auto;
+        }
+        @media(max-width: $medium) {
+            width: 70%;
+            padding-top: 53%;
+            margin-bottom: 37px;
+        }
         @media(max-width: $small) {
             width: 100%;
+            padding-top: 66%;
+            margin-bottom: 37px;
+        }
+
+        &-wrapper {
+            box-sizing: border-box;
+            width: 85%;
+            margin: 0 auto;
+            padding-top: 24px;
+            padding-left: 35px;
+            padding-bottom: 55px;
+            background: white;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+            @media(max-width: $small) {
+                width: 80%;
+                margin-left: 0;
+                padding-top: 18px;
+                padding-left: 30px;
+                padding-bottom: 40px;
+            }
+        }
+
+        h3 {
+            font-family: "Yeseva One", sans-serif;
+            font-size: 18px;
+            line-height: 25px;
+
+            @media(max-width: $small) {
+                font-size: 15px;
+            }
+        }
+
+        ul {
+            margin: 0 auto;
+            padding-top: 6px;
+            padding-left: 17px;
+            background: white;
+            font-family: "FuturaBookC", serif;
+            font-size: 15px;
+            line-height: 25px;
+
+            @media(max-width: $medium) {
+                font-size: 13px;
+                line-height: 22px;
+            }
+            @media (max-width: $small) {
+                max-height: 153px;
+                overflow: hidden;
+            }
+        }
+
+        &--mini {
+            background: url("/asset/images/bg_design_mini.png") no-repeat;
+            background-size: contain;
+        }
+
+        &--standart {
+            background: url("/asset/images/bg_design_standart.png") no-repeat;
+            background-size: contain;            
+        }
+
+        &--full {
+            background: url("/asset/images/bg_design_full.png") no-repeat;
+            background-size: contain;            
+        }
+    }
+
+    &__price {
+        position: relative;
+        box-sizing: border-box;
+        top: -25px;
+        width: 58%;
+        height: 54px;
+        margin-left: 29px;
+        text-align: center;
+        font-family: "Yeseva One", sans-serif;
+        font-size: 18px;
+        line-height: 54px;
+        text-transform: uppercase;
+        background: #E3B873;
+        box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+
+        @media(max-width: $huge) {
+            width: 80%;
+        }
+        @media(max-width: $small) {
+            top: -23px;
+            width: 190px;
+            height: 40px;
+            margin-left: 0;
+            font-size: 15px;
+            line-height: 40px;
         }
     }
 
