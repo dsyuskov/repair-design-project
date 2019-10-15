@@ -185,39 +185,6 @@
     }
 }
 
-.section-our-team {
-    padding-top: 68px; // delete
-    text-align: center;
-    background: linear-gradient(to bottom, $bg-color1 0%, $bg-color1 59%, $bg-color1 59%, $bg-color2 59%, $bg-color2 100%);
-
-    &__title {
-        height: 94px; // delete
-    }
-
-    &__describe {
-        height: 94px; // delete
-    }
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 107px;
-
-        @media(max-width: $small) {
-            flex-direction: column;
-            padding: 0;
-        }
-    }
-    &__item {
-        width: 26.5%;
-        height: 450px; // delete
-        // border: 1px solid green;
-        @media(max-width: $small) {
-            width: 100%;
-        }
-    }
-}
-
 .section-our-clients {
     margin-top: 195px;
     background-color: $bg-color2;

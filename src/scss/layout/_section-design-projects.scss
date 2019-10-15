@@ -12,7 +12,7 @@
     }
 
     @media (max-width: $small) {
-        background: #252525;
+        background: $bg-color4;
     }
 
     &__title {
@@ -23,7 +23,7 @@
         line-height: 28px;
         text-transform: uppercase;
         color: $font-color4;
-        //background-color: $bg-color2;
+        
 
         @media(max-width: $small) {
             padding-top: 110%; //need to change

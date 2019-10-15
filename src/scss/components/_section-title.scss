@@ -1,0 +1,31 @@
+.section-title {
+    text-align: center;
+
+    &__caption {        
+        font-family: "Yeseva One", sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+
+        @media (max-width: $small) {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    &__logo {        
+        margin-top: 12px;      
+    }
+
+    &__describe {
+        margin-top: 17px;
+        font-family: "FuturaBookC", serif;
+        font-size: 20px;
+        line-height: 27px;
+        
+        @media (max-width: $small) {
+            font-size: 15px;
+            line-height: 20px;      
+        }
+    }
+}
