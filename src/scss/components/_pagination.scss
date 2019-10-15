@@ -1,6 +1,7 @@
 .pagination {
     padding: 0;    
     align-items: flex-end;
+    justify-content: space-between;
     display: flex;
     list-style: none;
 
@@ -9,6 +10,26 @@
     }
 
     &__item {
-        margin-right: 22px;
+        //margin-right: 22px;
+        opacity: 0.3;
+        width: 14px;
+        height: 14px;
+        background: url("/asset/images/pagination_point.png") no-repeat;
+        cursor: pointer;
+
+        &--active {
+            opacity: 1;
+        }
+
+        &--prev {
+            opacity: 1;
+            width: 42px;            
+            background: url("/asset/images/pagination_prev.png") no-repeat;
+        }
+        &--next {
+            opacity: 1;
+            width: 42px;            
+            background: url("/asset/images/pagination_next.png") no-repeat;
+        }
     }
 }

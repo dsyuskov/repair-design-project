@@ -1,24 +1,24 @@
-.section-steps {    
-        //margin-top: 50px;        
-        height: 687px;        
+.section-steps {            
         padding-left: 7%;
         padding-right: 7%;
-
         display: grid;
-        grid-template-columns: 38.5% 1fr;
-        grid-template-rows: 1fr 1.22fr;
+        grid-template-columns: 38% 62%;
+        grid-template-rows: 45% 55%;
         grid-template-areas: 
         "step step-list"
         "step image";
-        color: white;
-        z-index: 20;
+        color: $font-color;       
         
+        @media (max-width: $large) {
+            display: none;
+        }
 }
 
 .step {
-    grid-area: step;    
+    grid-area: step;  
 
-    h3 {
+
+    h4 {
         font-family: "FuturaDemiC", sans-serif;
         font-size: 15px;
         line-height: 21px;
@@ -43,18 +43,65 @@
         text-transform: uppercase;
     }
 
-    &__title {        
+    &__title {                
+        font-family: "Yeseva One", serif;        
         font-size: 15px;
         line-height: 23px;
-        color: $font-color2
+        text-transform: uppercase;
+        color: $font-color2;
+        margin-top: 19px;
+    }
+
+    &__description{    
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    &__pagination {
+        margin-top: 22%;
+        margin-bottom: 19%;
+        width: 60%;
     }
 }
 .step-list {
-    grid-area: step-list;
-    border: 1px solid green;
+    grid-area: step-list;    
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20%;    
+    padding: 0;
+    padding-top: 11%;
+    list-style:  none;
+
+    &__item {        
+        opacity: 0.3;
+
+        h3 {
+            font-family: "Yeseva One", serif;
+            font-size: 15px;
+            line-height: 21px;
+            border-bottom: 2px solid $font-color2;
+            padding-bottom: 3px;
+            display: inline;
+        }
+
+        p {
+            font-family: "FuturaBookC", sans-serif;
+            font-size: 15px;
+            line-height: 18px;
+            margin-top: 16px;
+        }
+        &--active {
+            opacity: 1;
+        }
+    }
 }
 
 .step-image {
     grid-area: image;
-    border: 1px solid green;
+    width: 100%;
+    height: auto;    
 }
