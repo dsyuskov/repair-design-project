@@ -1,0 +1,60 @@
+.section-steps {    
+        //margin-top: 50px;        
+        height: 687px;        
+        padding-left: 7%;
+        padding-right: 7%;
+
+        display: grid;
+        grid-template-columns: 38.5% 1fr;
+        grid-template-rows: 1fr 1.22fr;
+        grid-template-areas: 
+        "step step-list"
+        "step image";
+        color: white;
+        z-index: 20;
+        
+}
+
+.step {
+    grid-area: step;    
+
+    h3 {
+        font-family: "FuturaDemiC", sans-serif;
+        font-size: 15px;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-family: "Yeseva One", serif;
+        font-size: 27px;
+        line-height: 37px;
+        text-transform: uppercase;
+        width: 200px;
+        color: $font-color2;
+        margin-top: 13px;
+    }
+
+    &__number {
+        margin-top: 84px;
+        font-family: "Yeseva One", serif;        
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+    }
+
+    &__title {        
+        font-size: 15px;
+        line-height: 23px;
+        color: $font-color2
+    }
+}
+.step-list {
+    grid-area: step-list;
+    border: 1px solid green;
+}
+
+.step-image {
+    grid-area: image;
+    border: 1px solid green;
+}

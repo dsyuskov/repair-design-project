@@ -1,0 +1,14 @@
+.pagination {
+    padding: 0;    
+    align-items: flex-end;
+    display: flex;
+    list-style: none;
+
+    @media(max-width: $small) {
+        display: none;
+    }
+
+    &__item {
+        margin-right: 22px;
+    }
+}
