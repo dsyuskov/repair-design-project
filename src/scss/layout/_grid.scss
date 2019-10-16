@@ -185,38 +185,6 @@
     }
 }
 
-.section-our-clients {
-    margin-top: 195px;
-    background-color: $bg-color2;
-    // border: 1px solid green;
-    text-align: center;
-    &__title {
-        height: 94px; // delete
-    }
-
-    &__describe {
-        height: 94px; // delete
-    }
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        @media(max-width: $small) {
-            flex-direction: column;
-        }
-    }
-
-    &__item {
-        width: 32%;
-        height: 460px; // delete
-        // border: 1px solid green;
-
-        @media(max-width: $small) {
-            width: 100%;
-        }
-    }
-};
-
 .section-question {
     padding-top: 127px; // delete
     padding-bottom: 65px;
