@@ -7,11 +7,13 @@
         font-size: 15px;
         line-height: 20px;
         text-align: left;
+        
         @media (max-width: $small){
             color: rgba(255, 255, 255, 0.5);
         }
         
     }
+
     input {
         width: 100%;
         display: block;        
@@ -22,7 +24,6 @@
         border: 0;
         border-bottom: 1px solid rgba(54, 54, 54, 0.3);
      
-
         @media (max-width: $small) {
             background: $bg-color1;
             color: $font-color;
@@ -30,22 +31,3 @@
         }
     }
 }
-
-/*
-Q
-W
-R
-S
-V
-A
-I
-K
-L
-J
-D
-G
-X
-B
-N
-P
-*/

@@ -1,0 +1,98 @@
+.section-question {
+    
+    width: 100%;
+    height: 1332px;
+    padding-top: 11%;            
+    background: url("/asset/images/bg_section_question_left.png") no-repeat left top,
+                url("/asset/images/bg_section_question_right.png") no-repeat right top,
+                url("/asset/images/bg_section_question_bottom.png") no-repeat bottom;
+    color: $font-color;                
+    background-color: $bg-color2;
+
+    &__title {
+        margin-top: 3.6%;
+        font-family: "Yeseva One", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &-form {        
+        width: 61%;        
+        max-width: 883px;
+        max-height: 445px;
+        margin: 0 auto;        
+        border: 1px solid green;    
+        background-color: $bg-color5;    
+    }
+      
+    &__form-container {
+        padding-top: 5%;
+        padding-left: 20%;        
+        padding-right: 20%;
+        padding-bottom: 3.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 92px 95px 70px 51px;        
+        grid-column-gap: 10%;
+        grid-template-areas: 
+            "name phone"
+            "question question"
+            "agree agree"
+            "button button";
+        @media (max-width: $huge) {
+            grid-template-areas: 
+            "name"
+            "phone"
+            "question"
+            "agree"
+            "button";
+        }
+    }
+
+    &__text-field {       
+        input {
+            background-color: $bg-color5;
+        }
+
+        label {
+            color: $font-color;
+        }        
+    }
+
+    &__checkbox {
+        label {
+            color: $font-color;
+        }        
+    }
+}
+
+.question-form{
+
+    &__name {
+        grid-area: name;        
+    }
+
+    &__phone {
+        grid-area: phone;        
+    }
+
+    &__question {
+        grid-area: question;
+        width: 100%;
+    }
+
+    &__agree {
+        grid-area: agree;
+        justify-self: center;
+    }
+
+    &__button {
+        grid-area: button;
+        justify-self: center;        
+        width: 200px;
+    }
+}
