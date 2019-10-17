@@ -1,0 +1,8 @@
+.footer {
+    height: 133px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    @media(max-width: $small) {
+        display: none;
+    }
+}

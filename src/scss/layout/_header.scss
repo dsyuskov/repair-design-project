@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    padding-left: 5.7%;
+    padding-right: 7%;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+
+    @media(max-width: $medium) {
+        height: 70px;
+    }
+
+    @media(max-width: $small) {
+        height: 57px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    &__nav {
+        padding-left: 30px;
+        width: 46%;
+
+        @media(max-width: $large) {
+            width: 53%;
+        }
+
+        @media(max-width: $medium) {
+            width: 66%;
+        }
+
+        @media(max-width: $small) {
+            padding: 4.7%;
+            display: none;
+        }
+    }
+
+    &__phone {
+        color: $font-color2;
+        font-family: "FuturaDemiC", sans-serif;
+        font-size: 0.94vw;
+        text-decoration: underline;
+
+        @media(max-width: $large) {
+            display: none;
+        }
+
+        @media(max-width: $small) {
+            display: block;
+            font-size: 3.08vw;
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+
+    &__button {
+        width: 161px;
+        height: 37px;
+
+        @media(max-width: $large) {
+            width: 140px;
+            height: 30px;
+        }
+        
+        @media(max-width: $medium) {
+            display: none;
+        }
+    }
+}
