@@ -1,4 +1,15 @@
-.slider-projects {
+
+.section-completed-projects {
+    position: relative;
+    padding-top: 7.3%;
+    padding-left: 7%;
+
+    @media(max-width: $small) {
+        padding: 9% 4.7% 4.7%;
+    }
+}
+
+.section-projects {
     overflow: hidden;
     display: grid;
     grid-template-rows: 1.8fr 225px 225px 1fr;
