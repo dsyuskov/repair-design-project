@@ -37,7 +37,7 @@
         width: 114px;
         height: 30px;
         margin: 1% auto 1.7%;
-        background: url("/asset/images/design.svg") no-repeat center center;        
+        background: url("../images/design.svg") no-repeat center center;        
 
         @media(max-width: $small) {
             margin-top: 4.6%;
@@ -148,17 +148,17 @@
         }
 
         &--mini {
-            background: url("/asset/images/bg_design_mini.png") no-repeat;
+            background: url("../images/bg_design_mini.png") no-repeat;
             background-size: contain;
         }
 
         &--standart {
-            background: url("/asset/images/bg_design_standart.png") no-repeat;
+            background: url("../images/bg_design_standart.png") no-repeat;
             background-size: contain;            
         }
 
         &--full {
-            background: url("/asset/images/bg_design_full.png") no-repeat;
+            background: url("../images/bg_design_full.png") no-repeat;
             background-size: contain;            
         }
     }

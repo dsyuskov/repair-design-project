@@ -24,9 +24,9 @@
         width: 114px;
         height: 30px;
         margin: 0 auto;
-        background: url("/asset/images/line.svg") no-repeat left center,
-                    url("/asset/images/video.svg") no-repeat center center, 
-                    url("/asset/images/line.svg") no-repeat right center;                
+        background: url("../images/line.svg") no-repeat left center,
+                    url("../images/video.svg") no-repeat center center, 
+                    url("../images/line.svg") no-repeat right center;                
         margin-top: 0.8%;
         margin-bottom: 2%;
 
@@ -42,8 +42,8 @@
         padding-top: 30.2%;
         width: 100%;
         margin: 0 auto;
-        background: url("/asset/images/bg_section_video_control_left.png") no-repeat left top,
-                    url("/asset/images/bg_section_video_control_right.png") no-repeat right top,
+        background: url("../images/bg_section_video_control_left.png") no-repeat left top,
+                    url("../images/bg_section_video_control_right.png") no-repeat right top,
                     linear-gradient(to bottom, $bg-color1 0%, $bg-color1 52%, $bg-color1 52%, $bg-color2 52%, $bg-color2 100%);
         background-size: 45% auto;
 
@@ -99,7 +99,7 @@
         color: $font-color3;
         line-height: calcSize(24, 34);
         text-align: center;                
-        background: url("/asset/images/long_line.svg") no-repeat center 28%;
+        background: url("../images/long_line.svg") no-repeat center 28%;
         background-color: $bg-color2;   
 
         @media (max-width: $large){

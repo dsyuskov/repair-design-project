@@ -86,7 +86,7 @@
         width: 137px;
         padding-left: 50px;        
         text-align: center;
-        background: url("/asset/images/icon_client_area.svg") no-repeat 17px center;       
+        background: url("../images/icon_client_area.svg") no-repeat 17px center;       
     }
 
     &__time {
@@ -95,6 +95,6 @@
         padding-left: 40px;
         text-align: center;
         border-left: 1px solid $bg-color2;        
-        background: url("/asset/images/icon_client_calendar.svg") no-repeat 17px center;        
+        background: url("../images/icon_client_calendar.svg") no-repeat 17px center;        
     }
 }

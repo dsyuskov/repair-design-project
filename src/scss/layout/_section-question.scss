@@ -3,16 +3,16 @@
     padding-top: 11%;          
     padding-bottom: 4.5%;  
     background:
-                url("/asset/images/bg_section_question_left.png") no-repeat left top,
-                url("/asset/images/bg_section_question_right.png") no-repeat right top,
-                url("/asset/images/bg_section_question_bottom.png") no-repeat center bottom,
+                url("../images/bg_section_question_left.png") no-repeat left top,
+                url("../images/bg_section_question_right.png") no-repeat right top,
+                url("../images/bg_section_question_bottom.png") no-repeat center bottom,
                 linear-gradient(to bottom, $bg-color2 0%, $bg-color2 28.5%, $bg-color2 28.5%, $bg-color1 28.5%, $bg-color1 100%);    
     
     color: $font-color;                
     background-color: $bg-color2;  
 
     @media (max-width: $huge) {                
-        background: url("/asset/images/bg_section_question_bottom.png") no-repeat;
+        background: url("../images/bg_section_question_bottom.png") no-repeat;
         background-size: cover;
         background-color: $bg-color4;  
     }
@@ -75,7 +75,7 @@
         margin: 0 auto;        
         margin-top: 3%;                
         padding-top: 38%;
-        background: url("/asset/images/section_contact_map.png") no-repeat;
+        background: url("../images/section_contact_map.png") no-repeat;
 
         @media (max-width: $medium) {            
             order: 1;
@@ -186,11 +186,11 @@
     }
 
     &__mail {        
-        background: url("/asset/images/icon_contact_mail.svg") no-repeat center center;
+        background: url("../images/icon_contact_mail.svg") no-repeat center center;
     }
 
     &__instagram {        
-        background: url("/asset/images/icon_contact_instagram.svg") no-repeat center center;
+        background: url("../images/icon_contact_instagram.svg") no-repeat center center;
     }
 
     &__icon {

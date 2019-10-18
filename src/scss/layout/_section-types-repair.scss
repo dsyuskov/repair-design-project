@@ -23,7 +23,7 @@
         width: 114px;
         height: 30px;
         margin: 1% auto 2.5%;
-        background: url("/asset/images/repair.svg") no-repeat center center;
+        background: url("../images/repair.svg") no-repeat center center;
         background-color: $bg-color2;
 
         @media(max-width: $small) {
@@ -113,17 +113,17 @@
         }
 
         &--redecorating {
-            background: url("/asset/images/bg_repair_redecoration.png") no-repeat;
+            background: url("../images/bg_repair_redecoration.png") no-repeat;
             background-size: contain;
         }
 
         &--overhaul {
-            background: url("/asset/images/bg_repair_overhaul.png") no-repeat;
+            background: url("../images/bg_repair_overhaul.png") no-repeat;
             background-size: contain;
         }
 
         &--designer {
-            background: url("/asset/images/bg_repair_designer.png") no-repeat;
+            background: url("../images/bg_repair_designer.png") no-repeat;
             background-size: contain;
         }
     }
@@ -172,7 +172,7 @@
         box-sizing: border-box;
         width: 833px;
         height: 636px;        
-        background: url("/asset/images/bg-section-types_repair_request.png") no-repeat 0 -55px, url("/asset/images/ellipse_part1.svg") no-repeat 0 0, url("/asset/images/ellipse_part2.svg") no-repeat 395px 106px, url("/asset/images/ellipse_part3.svg") no-repeat 459px 222px, url("/asset/images/ellipse_part4.svg") no-repeat 427px 388px, url("/asset/images/ellipse_part5.svg") no-repeat 0 542px;   
+        background: url("../images/bg-section-types_repair_request.png") no-repeat 0 -55px, url("../images/ellipse_part1.svg") no-repeat 0 0, url("../images/ellipse_part2.svg") no-repeat 395px 106px, url("../images/ellipse_part3.svg") no-repeat 459px 222px, url("../images/ellipse_part4.svg") no-repeat 427px 388px, url("../images/ellipse_part5.svg") no-repeat 0 542px;   
         padding-left: 317px;
 
         @media (max-width: $huge) {
@@ -250,7 +250,7 @@
         margin-top: 55px;
         height: 100px;
         width: 233px;        
-        background: url("/asset/images/pig.svg") no-repeat;
+        background: url("../images/pig.svg") no-repeat;
         font-family: "FuturaDemiC", serif;
         font-size: 20px;
         line-height: 25px;
@@ -318,7 +318,7 @@
     padding-left: 6.7%;
     padding-top: 8%;
     padding-right: 7%;    
-    background: url("/asset/images/bg_section_types_repair.png") no-repeat center 75%;        
+    background: url("../images/bg_section_types_repair.png") no-repeat center 75%;        
     background-size: contain;       
     display: grid;        
     grid-template-columns: 1fr 28.6% 28.6%;
