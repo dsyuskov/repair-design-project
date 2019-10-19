@@ -12,6 +12,7 @@
     }
 
     @media (max-width: $small) {
+        margin-top: -32%;
         background: $bg-color4;
     }
 
@@ -26,7 +27,7 @@
         
 
         @media(max-width: $small) {
-            padding-top: 110%; //need to change
+            padding-top: 50%;
             font-size: 22px;
             line-height: 30px;            
             color: $font-color;

@@ -1,10 +1,9 @@
-
 .section-completed-projects {
     position: relative;
     padding-top: 7.3%;
     padding-left: 7%;
 
-    @media(max-width: $small) {
+    @media(max-width: $medium) {
         padding: 9% 4.7% 4.7%;
     }
 }
@@ -22,7 +21,7 @@
       "pagination image image-next";
     color: $font-color;
 
-    @media(max-width: $small) {
+    @media(max-width: $medium) { 
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -40,7 +39,7 @@
         margin: 0;
         height: 100%;
 
-        @media(max-width: $small) {
+        @media(max-width: $medium) { 
             display: none;
         }
     }
@@ -57,7 +56,7 @@
     &__caption {
         grid-area: caption;
 
-        @media(max-width: $small) {
+        @media(max-width: $medium) {
             text-align: center;
         }
     }
@@ -78,7 +77,7 @@
         font-size: calcSize(14, 18);
         line-height: calcSize(22, 29);
 
-        @media(max-width: $small) {
+        @media(max-width: $medium) {
             padding: 0 13px;
         }
     }
@@ -89,7 +88,7 @@
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr 1fr;
 
-        @media(max-width: $small) {
+        @media(max-width: $medium) {
             margin-top: 10%;
         }
 
@@ -111,15 +110,17 @@
         }
     }
 
+    &__mobile-slider {
+        margin-top: 11%;
+    }
 
     &__images {
         grid-area: image;
 
-        @media(max-width: $small) {
-            margin-top: 10%;
+        @media(max-width: $medium) {
+            display: none;
         }
     }
-
     &__image {
         width: 100%;
         height: auto;
@@ -129,7 +130,7 @@
         position: relative;
         grid-area: image-next;
 
-        @media(max-width: $small) {
+        @media(max-width: $medium) { 
             display: none;
         }
     }
@@ -143,19 +144,13 @@
         cursor: pointer;
     }
 
-    &-pagination {
+    &__pagination {
         padding: 0;
         grid-area: pagination;
-        align-items: flex-end;
-        display: flex;
-        list-style: none;
+        width: 210px;        
 
-        @media(max-width: $small) {
+        @media(max-width: $medium) { 
             display: none;
         }
-
-        &__item {
-            margin-right: 22px;
-        }
-    }
+    }    
 }

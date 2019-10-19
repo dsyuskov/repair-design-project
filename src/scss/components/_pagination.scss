@@ -9,12 +9,11 @@
         display: none;
     }
 
-    &__item {
-        //margin-right: 22px;
+    &__item {        
         opacity: 0.3;
         width: 14px;
         height: 14px;
-        background: url("/asset/images/pagination_point.png") no-repeat;
+        background: url("../images/pagination_point.png") no-repeat;
         cursor: pointer;
 
         &--active {
@@ -24,12 +23,13 @@
         &--prev {
             opacity: 1;
             width: 42px;            
-            background: url("/asset/images/pagination_prev.png") no-repeat;
+            background: url("../images/pagination_prev.png") no-repeat;
         }
+        
         &--next {
             opacity: 1;
             width: 42px;            
-            background: url("/asset/images/pagination_next.png") no-repeat;
+            background: url("../images/pagination_next.png") no-repeat;
         }
     }
 }

@@ -1,0 +1,39 @@
+.mobile-slider {
+    position: relative;
+    display: none;        
+    z-index: 10;
+
+    img {
+        display: block;
+        width: 100%;        
+        height: auto;
+    }
+
+    @media (max-width: $medium) {
+        display: block;
+        width: 100%;
+        margin: 0 auto;        
+    }
+
+    &__arrow--left {
+        left: 14px;
+        background: url(/assets/images/arrow_left.svg) no-repeat center center;
+    }
+    &__arrow--right {
+        right: 14px;
+        background: url(/assets/images/arrow_right.svg) no-repeat center center;
+    }
+
+    &__arrow {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;        
+        top: 0;
+        bottom: 0;
+        margin-bottom: auto;
+        margin-top: auto;
+        cursor: pointer;
+        background-color: $bg-color3;                
+    }
+}
